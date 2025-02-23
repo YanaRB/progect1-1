@@ -4,68 +4,98 @@
     <meta neme="viewport" content="width=devise-width, initial-scale=1.0">
     <title>Правильное питание</title>
 </head>
-<body>
-    <header>
-        <h1>ЭкоГурман</h1>
-    <nav>
-        <ul>
-            <li><a href="#">рецепты</a></li>
-            <li><a href="#">блог</a></li>
-            <li><a href="#">план питания</a></li>
-            <li><a href="#">форум</a></li>
-            <li><a href="#">личный кабинет</a></li>
+<body class="page">
+    <header class="header>
+        <img class="header__logo" src="images/дерево.png" alt="логотип" width="50" height="50">
+        <h1 class="header__title">ЭкоГурман</h1>
+        <a class="header__button" href="login.html">вход</a>
+        <a class="header__button" href="registration.html">регистрация</a>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item menu__item--active"><a class="menu__link" href="index (8).html">главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">рецепты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">план питания</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">форум</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search">
+        <h2 class="search__title"> Поиск рецептов</h2>
+        <div class="search__card">Введите название блюда</p>
+        <form action="/" method="get">
+            <input type="search" name="text" placeholder="название блюда....">
+            <input type="submit" value="Поиск">
+        </form>
+        <ul class="tags--no--active">
+            <li class="tags__item tags__item--bold">Мясо</li>
+            <li class="tags__item">Деликатесы</li>
+            <li class="tags__item">рыба</li>
+            <li class="tags__item">напитки</li>
         </ul>
-    </nav>
-   </header>
+    </div>
+
+    <main class="main">
+        <div class="offers">
+            <h2 class="offers__title">для тебя</h2>
+            <div class="offers__card">
+                <img src="images/каша.jfif" alt="предложение" width="80" height="80">
+                <p class="offers__name">популярные рецепты</p>
+                <a href="#">узнать подробнее</a>
+            </div>
+            <div class="offers__card">
+                <img src="images/пицца.jfif" alt="предложение" width="80" height="80">
+                <p class="offers__name">закажи готовое сбалансированное под себя блюдо, к порогу твоего дома</p>
+                <a href="#">узнать подробнее</a>
+            </div>
+            <div class="offers__card">
+                <img src="images/омлет.jfif" alt="предложение" width="80" height="80">
+                <p class="offers__name">составь себе рацион одним кликом</p>
+                <a href="#">узнать подробнее</a>
+            </div>
+            <div class="offers__card">
+                <img src="images/вопрос.png" alt="предложение" width="80" height="80">
+                <p class="offers__name">отзывы</p>
+                <a href="#">узнать подробнее</a>
+            </div>
+        </div>
+        <Div class="articles">
+            <h3 class="articles__title">статьи</h3>
+            <h2 class="articles__name">Почувствуй баланс, наполняя тарелку вкусами полезной пищи</h2>
+            <p class="articles__text">Ощущение исстинного баланса, заполняя тарелку разнообразием полезных и питательных ингридиентов, которые не только насыщают, но и приносят радость вкуса, гармонично сочетая наслаждение с заботой о здоровье и благополучия тела.</p> 
+            <img src="/images/блюда.jpg" alt="блюда" width="500" height="500">
+            <button class="button">еще больше о полезном питании</button>
+        </Div>
+        <section class="section">
+            <form action="/submit" method="post">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" placeholder="Введите ваше имя">
+                <label for="password">пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email"
+                <label for="country">Страна:</label>
+                <select id="country" name="country">
+                    <option value="ru">Россия</option>
+                    <option value="us">США</option>
+                    <option value="ch">Китай</option>
+                </select>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Введите ваше сообщение"></textarea>
+                <imp
+                <fieldset>
+                    <input type="submit" value="отправить">
+                    <button type="button">отмена</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer__menu">
+        <p class="my__name">Сайт создан Рябининой Яной Александровной группа ТС-12</p>
+        <ul class="menu">
+            <li class="menu__item"><a class menu__link" href="#">пользовательское соглашение</a></li>
+            <li class="menu__item"><a class menu__link" href="#">политика конфидециальности</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
-<section>
-    <div>
-        <h2>для тебя</h2>
-    </div>
-    <ul>
-        <li>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fmP2jUeNk7pvCzWU_IjgcyV3DXvjPUXLCw&s" width="80" height="80">
-            <h3>популярные рецепты</h3>
-            <a href="#">узнать подробнее</a>
-        </li>
-        <li> 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkRsyJOTmdincl55D9NUWvS3Ft2TZKz1N1A&s" width="80" height="80">
-            <h3>закажиготовое сбалансированное под себя блюдо, к порогу твоего дома</h4>
-            <a href="#">узнать подробнее</a>
-        </li>
-        <li>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvIsWSq5oQx5RmFfK9PhWdbZV3Wej6LyBdlg&s" width="80" height="80">
-            <h3>составь себе рацион одним кликом</h5>
-            <a href="#">узнать подробнее</a>
-        </li>
-        <li>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVtg0uSoa9NEl8BRIrDjt5znwKLcHEgoLug&s" width="80" height="80">
-            <h3>отзывы</h6>
-            <a href="#">узнать подробнее</a>
-        </li>
-    </ul>
-</section>
-<section>
-    <h3>статьи</h3>
-    <h2>Почувствуй баланс, наполняя тарелку вкусами полезной пищи</h2>
-     <p>Ощущение исстинного баланса, заполняя тарелку разнообразием полезных и питательных ингридиентов, которые не только насыщают, но и приносят радость вкуса, гармонично сочетая наслаждение с заботой о здоровье и благополучия тела.</p> 
-     <img src="https://static.tildacdn.com/lib/unsplash/54f73b61-9079-0a1a-c097-e3ba9b29b9e7/photo.jpg" width="500" height="500">
-     <button>еще больше о полезном питании</button> 
-</section>
-<section>
-    <form action="/">
-        <h1>вход в личный кабинет</h1>
-        <input type="tel" name="phone" placeholder="номер телефона" required>
-        <input type="password" name="password" placeholder="пароль" required>
-        <button>войти</button>
-    </form>
-</section>
-<footer>
-    <p>Сайт создан Рябининой Яной Александровной группа ТС-12</p>
-    <ul>
-        <li><a href="#">пользовательское соглашение</a></li>
-        <li><a href="#">политика конфидециальности</a></li>
-    </ul>
-</footer>
- </html>
