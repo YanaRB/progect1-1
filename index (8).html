@@ -1,15 +1,21 @@
  <!DOCTYPE html>
- <html lang="ru"><head>
+ <html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta neme="viewport" content="width=devise-width, initial-scale=1.0">
     <title>Правильное питание</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+    
+    </style>
 </head>
 <body class="page">
-    <header class="header>
+    <header class="header container" style="width: 200px;" id="header"> 
         <img class="header__logo" src="images/дерево.png" alt="логотип" width="50" height="50">
         <h1 class="header__title">ЭкоГурман</h1>
-        <a class="header__button" href="login.html">вход</a>
-        <a class="header__button" href="registration.html">регистрация</a>
+        <button class="header__button button" href="login.html">вход</button>
+        <button class="header__button button" href="registration.html">регистрация</button>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active"><a class="menu__link" href="index (8).html">главная</a></li>
@@ -26,7 +32,7 @@
         <div class="search__card">Введите название блюда</p>
         <form action="/" method="get">
             <input type="search" name="text" placeholder="название блюда....">
-            <input type="submit" value="Поиск">
+            <button class="submit__button button">Поиск</button>
         </form>
         <ul class="tags--no--active">
             <li class="tags__item tags__item--bold">Мясо</li>
@@ -35,8 +41,7 @@
             <li class="tags__item">напитки</li>
         </ul>
     </div>
-
-    <main class="main">
+    <main class="main container">
         <div class="offers">
             <h2 class="offers__title">для тебя</h2>
             <div class="offers__card">
@@ -65,9 +70,9 @@
             <h2 class="articles__name">Почувствуй баланс, наполняя тарелку вкусами полезной пищи</h2>
             <p class="articles__text">Ощущение исстинного баланса, заполняя тарелку разнообразием полезных и питательных ингридиентов, которые не только насыщают, но и приносят радость вкуса, гармонично сочетая наслаждение с заботой о здоровье и благополучия тела.</p> 
             <img src="/images/блюда.jpg" alt="блюда" width="500" height="500">
-            <button class="button">еще больше о полезном питании</button>
+            <button class="button">узнать больше о полезном питании</button>
         </Div>
-        <section class="section">
+        <sections class="section">
             <form action="/submit" method="post">
                 <label for="username">Имя пользователя:</label>
                 <input type="text" id="username" name="username" placeholder="Введите ваше имя">
@@ -85,12 +90,12 @@
                 <textarea id="message" name="message" rows="5" cols="30" placeholder="Введите ваше сообщение"></textarea>
                 <imp
                 <fieldset>
-                    <input type="submit" value="отправить">
-                    <button type="button">отмена</button>
+                    <button class="fieldset__button button">отправить</button>
+                    <button class="fieldset__button button">отмена</button>
             </form>
-        </section>
+        </sections>
     </main>
-    <footer class="footer__menu">
+    <footer class="foote container">
         <p class="my__name">Сайт создан Рябининой Яной Александровной группа ТС-12</p>
         <ul class="menu">
             <li class="menu__item"><a class menu__link" href="#">пользовательское соглашение</a></li>
