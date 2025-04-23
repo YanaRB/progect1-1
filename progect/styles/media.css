@@ -1,0 +1,38 @@
+@media only screen and (max-width: 768px) {
+.header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.headerbuttons{
+    margin-top: 10px;
+}
+.searchcard{
+    font-size: 14px;
+}
+.menu{
+    flex-direction: column;
+    gap: 5px;
+}
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .headerbuttons{
+        margin-top: 10px;
+    }
+    .searchcard{
+        font-size: 14px;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 5px;
+    }
+    }
+    @media only screen and (max-width: 1024px) {
+        .container {
+         max-width: 100%;
+        }
+        }
+    
